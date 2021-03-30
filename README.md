@@ -14,4 +14,4 @@ Notes
 -----
 Could require heavy modifications depending on the LDAP data.
 
-Read more at:
+Read more on the [dedicated blogpost](https://www.errno.fr/BloodhoundForLinux.html)
