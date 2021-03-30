@@ -1,0 +1,70 @@
+dn: ou=users,dc=sample,dc=com
+ou: users
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=groups,dc=sample,dc=com
+ou: groups
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=netgroup,dc=sample,dc=com
+ou: netgroup
+objectClass: top
+objectClass: organizationalUnit
+
+dn: cn=databaseadmins,ou=groups,dc=sample,dc=com
+description: database admins
+objectClass: posixGroup
+cn: databaseadmins
+memberUid: jsmith
+memberUid: kmiller
+
+dn: cn=databaseusers,ou=groups,dc=sample,dc=com
+description: database users
+objectClass: posixGroup
+cn: databaseusers
+memberUid: sfarrington
+memberUid: jporter
+memberUid: lhartman
+
+dn: cn=jsmith,ou=users,dc=sample,dc=com
+givenName: John
+objectClass: inetOrgPerson
+sn: Smith
+cn: jsmith
+
+dn: cn=kmiller,ou=users,dc=sample,dc=com
+givenName: Kate
+objectClass: inetOrgPerson
+sn: Miller
+cn: kmiller
+
+dn: cn=jporter,ou=users,dc=sample,dc=com
+givenName: James
+objectClass: inetOrgPerson
+sn: Porter
+cn: jporter
+
+dn: cn=sfarrington,ou=users,dc=sample,dc=com
+givenName: Sarah
+objectClass: inetOrgPerson
+sn: Farrington
+cn: sfarrington
+
+dn: cn=lhartman,ou=users,dc=sample,dc=com
+givenName: Louis
+objectClass: inetOrgPerson
+sn: Hartman
+cn: lhartman
+
+dn: cn=DB001,ou=netgroup,dc=sample,dc=com
+objectClass: Host
+cn: DB001
+memberNisNetgroup: databaseadmins
+memberNisNetgroup: databaseusers
+
+dn: cn=DB001_repl,ou=netgroup,dc=sample,dc=com
+objectClass: Host
+cn: DB001_repl
+memberNisNetgroup: databaseadmins
