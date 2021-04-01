@@ -22,4 +22,4 @@ Read more on the [dedicated blogpost](https://www.errno.fr/BloodhoundForLinux.ht
 
 Dependencies
 ------------
-python3-ldap
+python3-ldap **NOT** python3-ldap3
